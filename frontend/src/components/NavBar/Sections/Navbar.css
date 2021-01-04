@@ -9,7 +9,7 @@
 }
 
 .menu__logo {
-  width: 150px;
+  width: 120px;
   float: left;
 }
 
@@ -17,6 +17,14 @@
   display: inline-block;
   font-size: 20px;
   padding: 19px 20px;
+}
+
+.menu__container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 120px);
+  height: 70px;
 }
 
 .menu__container .ant-menu-item {
@@ -49,7 +57,8 @@
   height: 32px;
   padding: 6px;
   margin-top: 8px;
-  display: none !important; /* use of important to overwrite ant-btn */
+  display: none !important;
+  /* use of important to overwrite ant-btn */
   background: #3e91f7;
 }
 
@@ -67,13 +76,21 @@
     display: inline-block !important;
   }
 
-  .menu_left,
+  /* .menu_left,
   .menu_rigth {
     display: none;
+  } */
+
+  .menu__logo {
+    width: 60px;
   }
 
   .menu__logo a {
     margin-left: -20px;
+  }
+
+  .menu__container {
+    width: calc(100% - 60px);
   }
 
   .menu__container .ant-menu-item,

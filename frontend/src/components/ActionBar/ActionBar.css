@@ -1,0 +1,14 @@
+.actionbar {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .actionbar {
+  display: flex;
+  justify-content: space-between;
+} */

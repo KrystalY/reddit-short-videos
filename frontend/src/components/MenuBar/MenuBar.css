@@ -1,0 +1,13 @@
+.menuBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-top: 2px solid #eee;
+}
+
+.menuBar ul {
+  display: flex;
+  justify-content: space-between;
+}

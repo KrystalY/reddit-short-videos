@@ -27,7 +27,6 @@ function NavBar() {
         </div>
         <div className="menu_rigth">
           <Button>Log in</Button>
-          <Button>Sign up</Button>
         </div>
       </div>
     </nav>

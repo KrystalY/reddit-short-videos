@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Auth from "../hoc/auth";
 // pages for this product
 import NavBar from '../components/NavBar/NavBar';
-import Footer from '../components/Footer/Footer';
+import MenuBar from '../components/MenuBar/MenuBar';
+// import Footer from '../components/Footer/Footer';
 import VideoList from './Video/VideoList.js';
 import VideoDetail from './Video/VideoDetail.js';
 import UserList from './Account/UserList.js';
@@ -13,7 +14,13 @@ function App() {
     <Suspense fallback={<div>Loading...</div>}>
       <NavBar />
       <Router>
-        <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
+        <div
+          style={{
+            paddingTop: '69px',
+            minHeight: 'calc(100vh - 80px)',
+            width: '100%'
+          }}
+        >
           <Switch>
             <Route exact path="/v" component={VideoList} />
             <Route exact path="/v/:vId" component={VideoDetail} />
@@ -24,7 +31,7 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <Footer />
+      <MenuBar />
     </Suspense>
   );
 }
