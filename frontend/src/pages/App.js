@@ -11,8 +11,8 @@ import UserList from './Account/UserList.js';
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
+      <NavBar />
       <Router>
-        {/* <NavBar /> */}
         <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
           <Switch>
             <Route exact path="/v" component={VideoList} />
@@ -23,8 +23,8 @@ function App() {
           <Route exact path="/register" component={Auth(RegisterPage, false)} /> */}
           </Switch>
         </div>
-        <Footer />
       </Router>
+      <Footer />
     </Suspense>
   );
 }
